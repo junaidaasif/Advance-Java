@@ -1,0 +1,36 @@
+package com.techment;
+
+package com.javatpoint.jpa.jpql;  
+import com.javatpoint.jpa.StudentEntity;  
+import javax.persistence.*;  
+import java.util.*;  
+public class BulkClient{  
+      
+     public static void main( String args[]) {  
+             
+          EntityManagerFactory emf = Persistence.createEntityManagerFactory( "Student_details" );  
+          EntityManager em = emf.createEntityManager();  
+          em.getTransaction().begin( );  
+            
+            
+          Query query = em.createQuery( "Select s from StudentEntity s ");  
+            
+          @SuppressWarnings("unchecked")  
+        List<StudentEntity> list=(List<StudentEntity>)query.getResultList( );  
+           
+          System.out.print("s_id");  
+          System.out.print("\t s_name");  
+         System.out.println("\t s_age");  
+            
+            
+          for( StudentEntity s:list ){  
+             System.out.print( s.getS_id( ));  
+             System.out.print("\t" +  s.getS_name( ));  
+            System.out.print("\t" + s.getS_age( ));  
+            System.out.println();  
+          }  
+em.getTransaction().commit();  
+          em.close();  
+          emf.close();    
+     }  
+}  

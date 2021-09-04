@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.techment.services.Cookies&apos; to &apos;CookieDemo&apos;&#x0D;&#x0A;- Original project: &apos;CookiesDemo&apos;&#x0D;&#x0A;- Original element: &apos;com.techment.services.Cookies&apos;&#x0D;&#x0A;- Renamed element: &apos;com.techment.services.CookieDemo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Cookies&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.techment.services{Cookies.java[Cookies" matchStrategy="1" name="CookieDemo" qualified="false" references="true" similarDeclarations="false" stamp="1629706132484" textual="false" version="1.0"/>
+</session>

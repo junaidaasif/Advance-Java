@@ -1,0 +1,22 @@
+package com.techment;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="book420")
+public class Book {
+	@Id
+	int bookId;
+	String title;
+	String price;
+	
+	@ManyToOne
+	@JoinColumn(name="authorId")
+	Author author;
+	
+	
+}

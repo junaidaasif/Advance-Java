@@ -1,0 +1,54 @@
+package com.manytoone;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class ManyToOne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		EntityManagerFactory emf =Persistence.createEntityManagerFactory("s");
+		EntityManager em = emf.createEntityManager();
+		
+		em.getTransaction().begin();
+		
+		Course java = new Course(90, "java", 4);
+			
+		
+		em.persist(java);
+
+		
+		Student junaid = new Student();
+		
+		junaid.setId(2);
+		junaid.setName("Junaid");
+		junaid.setCourse(java);
+		
+		Student junaid2 = new Student();
+		
+		junaid.setId(1);
+		junaid.setName("aashu");
+		junaid.setCourse(java);
+		
+		Student junaid3 = new Student();
+		
+		junaid.setId(3);
+		junaid.setName("ankit");
+		junaid.setCourse(java);
+		
+		em.persist(junaid);
+		em.persist(junaid2);
+		em.persist(junaid3);
+		
+		System.out.println("==========inserted=========");
+		
+		
+		em.getTransaction().commit();
+	}
+
+}

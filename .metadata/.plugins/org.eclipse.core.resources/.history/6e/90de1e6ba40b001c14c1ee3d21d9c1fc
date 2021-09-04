@@ -1,0 +1,63 @@
+package com.techment;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+
+
+public class AssignmentClient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		EntityManagerFactory emf =Persistence.createEntityManagerFactory("s");
+		EntityManager em = emf.createEntityManager();
+		
+		em.getTransaction().begin();
+		
+		Author author = new Author();
+		
+		author.setName("Robert");
+		
+		em.persist(author);
+		
+		BookAssignment book1 = new BookAssignment();
+	
+		book1.setTitle("Rich dad poor dad");
+		book1.setPrice(500);
+		book1.setAuthor(author);
+		
+		em.persist(book1);
+		
+		
+		BookAssignment book2 = new BookAssignment();
+	
+		book2.setTitle("Second Chance");
+		book2.setPrice(1500);
+		book2.setAuthor(author);
+		
+		em.persist(book2);
+		
+		System.out.println("==========inserted=========");
+		
+		
+		 Query query = em.createQuery( "Select b from BookAssignment b ");   
+		
+		 List<BookAssignment> list=(List<BookAssignment>)query.getResultList( );  
+         
+		 
+		 for( BookAssignment b:list ){  
+         System.out.print("p.getTitle()");  
+		 }
+		 
+		 
+		em.getTransaction().commit();
+		
+		
+		
+	}
+
+}

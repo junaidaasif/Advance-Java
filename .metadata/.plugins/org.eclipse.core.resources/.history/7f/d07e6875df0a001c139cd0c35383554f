@@ -1,0 +1,12 @@
+package com.techment;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Employee {
+	int id;
+	String name;
+	String designation;
+	Address address;
+	
+}

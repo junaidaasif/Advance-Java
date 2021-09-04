@@ -1,0 +1,11 @@
+package com.techment;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Table(name="Author101")
+@Entity
+
+public class Author {
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;object.xml&apos; to &apos;NewWeb&apos;&#x0D;&#x0A;- Original project: &apos;Autowiring&apos;&#x0D;&#x0A;- Destination element: &apos;NewWeb&apos;&#x0D;&#x0A;- Original element: &apos;object.xml&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=NewWeb" element1="src/object.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1629958006455" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,11 @@
+127.0.0.1 - - [25/Aug/2021:09:58:01 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/Aug/2021:09:58:02 +0530] "GET /LoginRegister/ HTTP/1.1" 200 273
+0:0:0:0:0:0:0:1 - - [25/Aug/2021:09:58:05 +0530] "GET /LoginRegister/login/html/index.html HTTP/1.1" 200 1172
+0:0:0:0:0:0:0:1 - - [25/Aug/2021:09:58:05 +0530] "GET /LoginRegister/login/css/style.css HTTP/1.1" 200 1386
+0:0:0:0:0:0:0:1 - - [25/Aug/2021:09:58:06 +0530] "GET /LoginRegister/login/img/bg.jpg HTTP/1.1" 200 641884
+0:0:0:0:0:0:0:1 - - [25/Aug/2021:09:58:18 +0530] "GET /LoginRegister/Logined?Lemail=junaidaasif@gmailcom&Lpassword=sadasdakjh HTTP/1.1" 200 290
+0:0:0:0:0:0:0:1 - - [25/Aug/2021:09:58:22 +0530] "GET /LoginRegister/form_validation/html/index.html HTTP/1.1" 200 1181
+0:0:0:0:0:0:0:1 - - [25/Aug/2021:09:58:22 +0530] "GET /LoginRegister/form_validation/css/style.css HTTP/1.1" 200 1386
+0:0:0:0:0:0:0:1 - - [25/Aug/2021:09:58:22 +0530] "GET /LoginRegister/form_validation/img/bg.jpg HTTP/1.1" 200 641884
+0:0:0:0:0:0:0:1 - - [25/Aug/2021:09:58:50 +0530] "GET /LoginRegister/Registration?Remail=junaid@gmail.com&Rpassword=sasda HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [25/Aug/2021:09:59:11 +0530] "GET /LoginRegister/Logined?Lemail=junaid@gmail.com&Lpassword=ddsdas HTTP/1.1" 200 9

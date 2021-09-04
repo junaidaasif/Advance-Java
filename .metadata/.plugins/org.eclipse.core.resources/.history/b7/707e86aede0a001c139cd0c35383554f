@@ -1,0 +1,9 @@
+package com.techment;
+
+public class Employee {
+	int id;
+	String name;
+	String designation;
+	Address address;
+	
+}

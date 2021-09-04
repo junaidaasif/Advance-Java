@@ -1,0 +1,18 @@
+package com.techment;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table (name="student500")
+public class Student {
+		
+	@Id
+	int Studentid;
+	String name;
+	String dept;
+	
+	}
+
+

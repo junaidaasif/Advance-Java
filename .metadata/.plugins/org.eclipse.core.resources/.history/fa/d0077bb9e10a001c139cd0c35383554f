@@ -1,0 +1,16 @@
+package com.onetomany;
+
+
+import java.util.ArrayList;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "student300")
+public class Student {
+	
+	int id;
+	String name;
+	ArrayList<Course> course;
+}

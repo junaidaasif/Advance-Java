@@ -1,0 +1,10 @@
+package coml.techment.onetomany;
+
+public class OneToManyClient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

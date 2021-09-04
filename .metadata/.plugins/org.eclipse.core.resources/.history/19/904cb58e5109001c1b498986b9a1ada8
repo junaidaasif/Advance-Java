@@ -1,0 +1,30 @@
+package com.techment;
+
+import org.hibernate.query.Query;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class HQLSelect {
+
+	public static void main(String[] args) {
+		// TODO Auto-generatwrfewed method stub
+
+		Configuration config = new Configuration();
+		config.configure("hibernate.cfg.xml");
+		
+		SessionFactory sessionFactory = config.buildSessionFactory();
+		Session session = sessionFactory.openSession();
+		
+		Query query = session.createQuery("select s from student s");
+		List<Student> studentList = querylist();
+		
+		
+		
+		
+	}
+
+}
